@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Post Malone</title>
+  </head>
+  <body>
+    <!--Logo-->
+    <img src="assets/Postlogo.png" alt="" class="img-fluid rounded mx-auto d-block">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <!--Code for collapsable menu and hamburger menu-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mx-5">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link" href="music.html">Music</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <!--active page-->
+          <li class="nav-item active mx-5">
+            <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <u class="underline"><h3 class="text-center outnow">Contact Us</h3></u>
+    <br>
+    <!--Form-->
+    <div class="container">
+        <!--Form needs validation-->
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+                <!--Label name-->
+              <label for="validationCustom01" class="form-label">First name</label>
+              <!--input type set to text-->
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
+              <!--output under field if it is valid-->
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <!--update under field if it is not valid-->
+              <div class="invalid-feedback">
+                Please enter your name.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please enter your surname.
+              </div>
+              <br>
+            </div>
+            <div class="col-md-6">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required> 
+                <div class="invalid-feedback">
+                    Please enter your email.
+                  </div>
+                  <br>
+              </div>
+            <div class="col-md-12">
+                <label for="validationTextarea" class="form-label">Message</label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Type your message..." required></textarea>
+                <div class="invalid-feedback">
+                    Please enter a message in the text area.
+                  </div>
+                <br>
+              </div>
+              <!--submit button which links to js script-->
+            <div class="col-md-12 d-flex justify-content-center align-content-center">
+              <button class="btn" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+    <!--Validation JavaScript -->
+    <script src="scripts.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
